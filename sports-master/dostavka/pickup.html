@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Выбор магазина</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <button class="back" onclick="history.back()">←</button>
+
+    <h3>Выберите магазин</h3>
+
+    <div class="shop" onclick="selectShop('Москва ТЦ Мега')">📍 Москва ТЦ Мега</div>
+    <div class="shop" onclick="selectShop('Москва ТЦ Авиапарк')">📍 Москва Авиапарк</div>
+    <div class="shop" onclick="selectShop('Казань ТЦ Орбита')">📍 Казань Орбита</div>
+
+</div>
+
+<script src="pickup.js"></script>
+
+<style>
+.shop {
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.shop:hover {
+    background: #ff5a00;
+    color: white;
+}
+</style>
+
+</body>
+</html>

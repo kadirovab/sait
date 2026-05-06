@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~</title>
+    <link rel="stylesheet" href="каталог.css">
+</head>
+<body>
+    <header>
+        <button id="backBtn" onclick="history.back()"><img src="Images/Кнопка назад.png"></button>
+        <div class="logo"><img src="Images/лого.png"></div>
+        <button id="cartBtn"><img src="Images/доставка.png"></button>
+    </header>
+    <main>
+        <section class="search-bar">
+            <div class="search-bar_txt">товары</div>
+                <input type="text" id="searchInput">
+            <button onclick="searchProducts()"><img src="Images/поиск.png" id="search_img"></button>
+            <button><img src="Images/избранное.png" id="like_img"></button>
+            <button><img src="Images/меню.png" id="menu_img"></button>
+        </section>
+        <section class="product-grid" id="productGrid">
+            <!-- Товары будут добавлены через JavaScript -->
+        </section>
+    </main>
+    <script src="каталог.js"></script>   
+</body>
+</html>

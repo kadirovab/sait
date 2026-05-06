@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Оформление заказа</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div id="step1">
+        <a href="karzina.html"><button class="back">←</button></a>
+
+        <input type="text" placeholder="Комментарий или заказ">
+
+        <button class="btn" id="deliveryBtn">ДОСТАВКА</button>
+        <button class="btn" id="pickupBtn">САМОВЫВОЗ</button>
+    </div>
+
+
+    <div id="step2" class="hidden">
+        <h3>Заполните анкету</h3>
+
+        <div id="shopInfo" class="shop-info"></div>
+
+        <input id="name" placeholder="Имя">
+        <input id="surname" placeholder="Фамилия">
+        <input id="phone" placeholder="Телефон">
+        <input id="email" placeholder="Почта">
+        <div id="addressBlock">
+            <input id="address" placeholder="Адрес">
+        </div>
+
+        <button class="btn" id="submitBtn">ОТПРАВИТЬ</button>
+
+        <p id="message"></p>
+    </div>
+
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

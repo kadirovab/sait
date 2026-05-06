@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('Images/фон.png')
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.search-bar {
+    background-color: #CF5702;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#search_img {
+    height: 37px;
+}
+
+#like_img {
+    height: 46px;
+}
+
+#menu_img {
+    height: 34px;
+    background-color: #CF5702;
+}
+
+.search-bar_txt {
+    display: flex;
+    font-weight: bold;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 35px;
+    margin-right: 20px;
+    margin-left: 45px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 23px;
+    flex: 1;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #CF5702;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.product-card {
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.add-btn {
+    background-color: #CF5702;
+    border: none;
+    border-radius: 15px;
+    margin-top: 9px;
+    width: 100%;
+    height: 54px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}

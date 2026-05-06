@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik, sans-serif;
+}
+
+body {
+    background-image: url('assets/Rectangle67.png');
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px;
+    padding-bottom: 70px;
+    background: rgba(245, 158, 11, 0);
+    color: white;
+}
+
+.logo {
+    width: 107px;
+    height: 107px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 53px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 39px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    background: #CF5702;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #983f00;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 50px;
+    flex: 1;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.square {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 303 / 338;
+    background: #cf570200;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Заполнит всё пространство, слегка обрезав края, если пропорции не совпадут */
+    /* Или используйте object-fit: contain; если важно видеть картинку целиком без обрезки */
+    border-radius: 5px;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.rect {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 303 / 82;
+    background: #cf570200;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: url();
+}
+
+.rect img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Заполнит всё пространство, слегка обрезав края, если пропорции не совпадут */
+    /* Или используйте object-fit: contain; если важно видеть картинку целиком без обрезки */
+    border-radius: 5px;
+}
+
+.footer {
+    background: #2222224c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(16, 80, 80, 0.7) 0%, rgba(29, 122, 122, 0.7) 100%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 750px;
+    height: 250px;
+    position: relative;
+    color: white;
+}
+
+.card-img {
+    height: 225px;
+}
+
+.card-title {
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+    font-size: 20px;
+}
+
+.button {
+    height: 50px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    /* Приподнимается */
+    border-color: #ff8c00;
+    /* Рамка становится оранжевой */
+}
+
+/* Кнопка немного уменьшается при нажатии */
+.buy-btn:active,
+.quantity-control button:active {
+    transform: scale(0.95);
+    transition: 0.1s;
+}
+
+/* Кнопка начинает светиться при наведении */
+.buy-btn:hover {
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.5);
+    filter: brightness(1.1);
+    transition: 0.3s;
+}
